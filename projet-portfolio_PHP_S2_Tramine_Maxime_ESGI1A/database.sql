@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS projects (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
--- Insertion des données de test
+-- Insertion des données de test (Facultatif)
 -- Utilisateurs (mot de passe: 'password')
 INSERT INTO users (username, email, password, role) VALUES
 ('admin', 'admin@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin'),
